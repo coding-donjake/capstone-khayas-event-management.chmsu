@@ -258,13 +258,29 @@ body {
   h1 {
     font-size: 2rem;
     font-weight: 600;
-    text-decoration: underline;
     margin-bottom: 2rem;
   }
 
-  .block {
-    padding: 2rem;
-    background-color: white;
-    border-radius: 1rem;
+  .blocks-wrapper {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    .block {
+      padding: 2rem;
+      background-color: white;
+      border-radius: 1rem;
+      box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.3);
+      color: white;
+
+      h2 {
+        margin-bottom: 1rem;
+      }
+
+      span {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    }
   }
 }
