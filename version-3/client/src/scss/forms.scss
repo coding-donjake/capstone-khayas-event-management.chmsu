@@ -1,0 +1,46 @@
+.form-login {
+  width: 400px;
+  margin: 4rem auto;
+  display: flex;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.3);
+  flex-direction: column;
+
+  .form-header {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    background-color: #755057;
+    color: white;
+    flex-direction: column;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  }
+
+  .form-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+
+    .form-btns {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: end;
+
+      button {
+        min-width: 120px;
+      }
+    }
+  }
+}

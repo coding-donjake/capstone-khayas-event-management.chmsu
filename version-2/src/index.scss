@@ -284,3 +284,68 @@ body {
     }
   }
 }
+
+.page-content-wrapper {
+  min-height: 100vh;
+  padding: 2rem;
+  padding-left: calc(300px + 2rem);
+  background-color: #ccc;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+}
+
+.form-v1 {
+  margin: 2rem auto;
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .form-inputs {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-group {
+
+    input {
+      width: 100%;
+      padding: 0.5rem 1rem;
+      background-color: white;
+      border-radius: 0.5rem;
+    }
+
+    select {
+      @extend input;
+    }
+  }
+
+  .form-btns {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: end;
+
+    button {
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      background-color: #555;
+      border-radius: 5px;
+      color: white;
+      gap: 1rem;
+      justify-content: space-between;
+
+      span {
+        flex: 1;
+        text-align: left;
+      }
+    }
+  }
+}
